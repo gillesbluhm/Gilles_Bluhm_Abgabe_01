@@ -1,0 +1,149 @@
+/* @group Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	 v2.0 | 20110126
+	 License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+*{box-sizing: border-box}
+body {
+    line-height: 1;
+    width: auto;
+    background: url(../img/contact-bg.jpg) no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* @end */
+h1 {
+    text-align: center;
+        }
+.menue_home{
+    text-align: center;
+        }
+p{
+    text-align: center;
+
+        }
+.contact{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+h1{
+    
+    color: white;
+    
+    font-size: 50px;
+    text-decoration: none;
+    font-family: "termina", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.menue_home a{
+    color: white;
+    
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.5s;
+    
+    font-family: "termina", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    cursor: default;
+    
+    
+}
+.menue_home a:hover{
+    color: red;
+}
+
+p a{
+    color: white;
+    font-family: "helvetica";
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: default;
+    
+}
+p a:hover{
+    font-size: 28px;
+    color: red;
+    font-weight: bolder;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    cursor: default;
+}
+
+.c {
+    color: white;
+    font-family: "helvetica";
+    font-size: 12px;
+    margin-bottom: 1em;
+    
+}
+
+/* Mobile */
+@media screen and (max-width: 900px){
+    .menue_home a{
+        font-size: 36px;
+        
+    }
+    p a{
+        font-size: 36px;
+    }
+    p a:hover {
+        font-size: 45px;
+        
+    }
+    body {
+        background: url(../img/contact_bg_mobile.jpg) no-repeat top center;
+        
+    }
+}

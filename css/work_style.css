@@ -1,0 +1,193 @@
+/* @group Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	 v2.0 | 20110126
+	 License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+    position: relative;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* @end */
+
+h1{
+
+    position: fixed;
+    top: 5%; 
+    right: 5%;
+    color: black;
+    font-size: 30px;
+    cursor: default;
+    
+    font-family: "miller-headline", serif;
+    font-weight: 400;
+    font-style: italic;
+    transition: 0.5s;
+    
+}
+.home {
+    position: fixed;
+    top: 9%; 
+    right: 5%;
+    transition: 0.5s;
+}
+nav a {
+    color: black;
+    
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: default;
+    
+    font-family: "termina", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    
+    
+    
+
+}
+
+nav a:hover{
+    color:red;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 2;
+    grid-gap: 100px;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+img {
+    width: 100%
+       
+}
+.img-1 {
+    grid-column: 1 / span 1;
+    
+}
+.img-2 {
+    grid-column: 2 / span 1;
+    
+}
+.img-3 {
+   grid-column: 1 / span 1; 
+}
+.img-4 {
+   grid-column: 2 / span 1; 
+}
+.img-5 {
+   grid-column: 1 / span 1; 
+}
+.img-6 {
+   grid-column: 2 / span 1; 
+}
+
+p {
+    color: black;
+    font-family: sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    cursor: default;
+}
+
+.c {
+    color: black;
+    font-family: Helvetica;
+    font-size: 12px;
+    margin-bottom: 1em;
+    
+}
+
+/* Mobile */
+@media screen and (max-width: 900px)
+{
+     
+        .images {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+             }
+        .img-1 {
+        grid-column: 1 / span 1;
+    
+        }
+        .img-2 {
+        grid-column: 1 / span 1;
+    
+        }
+        .img-3 {
+        grid-column: 1 / span 1; 
+        }
+        .img-4 {
+        grid-column: 1 / span 1; 
+        }
+        .img-5 {
+        grid-column: 1 / span 1; 
+        }
+        .img-6 {
+        grid-column: 1 / span 1; 
+        }
+    
+    
+    h1{
+        position: absolute;
+        right: calc(50% - 86px);
+        top: 40px;
+        
+    }
+  
+    .home {
+        position: absolute;
+        right: calc(50% - 27px);
+        top: 80px;
+        }
+    
+
+}
